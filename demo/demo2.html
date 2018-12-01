@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      line-height: 1;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+    #d2 {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>用opacity进行隐藏示例</h1>
+  <div class="container">
+    d1: display
+    <div class="box" id="d1"></div>
+    <div>
+      <button id="btn1">切换</button>
+    </div>
+  </div>
+  <br>
+  <!-- -------- -->
+  <div class="container">
+    d2: opacity
+    <div class="box" id="d2"></div>
+    <div>
+      <button id="btn2">切换</button>
+    </div>
+  </div>
+  <br>
+  <!-- -------- -->
+  <div class="container">
+    d3: visibility
+    <div class="box" id="d3"></div>
+    <div>
+      <button id="btn3">切换</button>
+    </div>
+  </div>
+
+  <script>
+    const btn1 = document.querySelector('#btn1')
+    const d1 = document.querySelector('#d1')
+    btn1.addEventListener('click', function () {
+      d1.style.display = d1.style.display === 'none' ? 'block' : 'none'
+    }, false)
+
+    const btn2 = document.querySelector('#btn2')
+    const d2 = document.querySelector('#d2')
+    btn2.addEventListener('click', function () {
+      d2.style.opacity = d2.style.opacity === '0' ? '0.9' : '0'
+    }, false)
+
+    const btn3 = document.querySelector('#btn3')
+    const d3 = document.querySelector('#d3')
+    btn3.addEventListener('click', function () {
+      d3.style.visibility = d3.style.visibility === 'hidden' ? 'initial' : 'hidden'
+    }, false)
+
+  </script>
+</body>
+
+</html>

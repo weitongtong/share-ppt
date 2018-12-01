@@ -1,0 +1,15 @@
+.img-full {
+  background: #fff;
+}
+.img-full img {
+  background: #fff;
+}
+.dom-tree-1 img {
+  display: inline-block;
+  width: 49%;
+}
+.single-img img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}

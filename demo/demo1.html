@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我叫demo</title>
+  <style>
+    #box {
+      width: 100%;
+      height: 100px;
+      background-color: red;
+    }
+    img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 我是注释 -->
+  <p>我是p节点</p>
+  <div id="box"></div>
+
+  <script>
+    var a = 1
+    console.log(a)
+    var box = document.querySelector('#box')
+    var bg = window.getComputedStyle(box).backgroundColor
+    console.log(bg)
+  </script>
+
+  <div>
+    <img src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1548893176.jpg" alt="">
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      console.log('DOMContentLoaded')
+      var img = document.querySelector('img')
+      console.log(img.width)
+    })
+
+    window.addEventListener('load', function () {
+      console.log('load')
+      var img = document.querySelector('img')
+      console.log(img.width)
+    })
+  </script>
+</body>
+
+</html>
